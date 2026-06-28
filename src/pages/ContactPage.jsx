@@ -2,6 +2,7 @@ import SectionHeading from '../components/SectionHeading';
 import Reveal from '../components/Reveal';
 import { useEffect } from 'react';
 import { Icon } from '../components/Icons';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function ContactPage() {
   useEffect(() => {
@@ -32,7 +33,7 @@ export default function ContactPage() {
           </Reveal>
           <Reveal className="page-hero-panel" delay={140}>
             <div className="contact-panel-brand">
-              <img src="/assets/images/logo.webp" alt="" />
+              <img src={assetUrl('images/logo.webp')} alt="" />
             </div>
             <div className="contact-panel-copy">
               <p>Hello Property Management</p>

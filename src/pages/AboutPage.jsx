@@ -4,6 +4,7 @@ import SectionHeading from '../components/SectionHeading';
 import Reveal from '../components/Reveal';
 import { aboutServiceCards, teamMembers } from '../data/siteData';
 import { Icon } from '../components/Icons';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function AboutPage() {
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function AboutPage() {
     <main className="page-shell">
       <Reveal as="section" className="about-showcase" delay={90}>
         <Reveal className="about-showcase-frame about-showcase-frame-large" delay={60}>
-          <img src="/assets/images/hero_brownstones.png" alt="Boston brownstones" />
+          <img src={assetUrl('images/hero_brownstones.png')} alt="Boston brownstones" />
           <div className="about-overlay-card about-overlay-left">
             <SectionHeading
               eyebrow="MEET THE TEAM"
@@ -54,7 +55,7 @@ export default function AboutPage() {
 
         <div className="about-showcase-stack">
           <Reveal className="about-showcase-frame about-showcase-frame-tall" delay={150}>
-            <img src="/assets/images/luxury_living_room.png" alt="Luxury living room" />
+            <img src={assetUrl('images/luxury_living_room.png')} alt="Luxury living room" />
             <div className="about-overlay-card about-overlay-right">
               <p className="eyebrow">Greater Boston</p>
               <h2>Condos, apartments, and luxury estates.</h2>
@@ -62,7 +63,7 @@ export default function AboutPage() {
             </div>
           </Reveal>
           <Reveal className="about-showcase-frame" delay={210}>
-            <img src="/assets/images/about_team_photo.webp" alt="Hello Property Management team" />
+            <img src={assetUrl('images/about_team_photo.webp')} alt="Hello Property Management team" />
           </Reveal>
         </div>
       </Reveal>

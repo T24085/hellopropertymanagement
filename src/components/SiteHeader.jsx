@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { Icon } from './Icons';
 import { internalNav, utilityLinks } from '../data/siteData';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -57,7 +58,7 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="main-nav">
         <Link to="/" className="brand-lockup" aria-label="Hello Property Management home">
-          <img src="/assets/images/logo.webp" alt="" />
+          <img src={assetUrl('images/logo.webp')} alt="" />
         </Link>
 
         <nav className="nav-links" aria-label="Primary" ref={navRef} onMouseLeave={hideIndicator}>

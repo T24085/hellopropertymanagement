@@ -4,6 +4,7 @@ import SectionHeading from '../components/SectionHeading';
 import Reveal from '../components/Reveal';
 import { Icon } from '../components/Icons';
 import { faqItems, heroCopy, serviceCards, stats, testimonialSlides } from '../data/siteData';
+import { assetUrl } from '../utils/assetUrl';
 
 export default function HomePage() {
   const [reduceMotion, setReduceMotion] = useState(false);
@@ -82,7 +83,7 @@ export default function HomePage() {
         </div>
 
         <Reveal as="div" className="hero-media" delay={160}>
-          <img src="/assets/images/hero_brownstones.png" alt="Boston brownstones" />
+          <img src={assetUrl('images/hero_brownstones.png')} alt="Boston brownstones" />
           <div className="hero-note hero-note-left" />
           <div className="hero-note hero-note-card">
             <p>Local Expertise.</p>
@@ -97,7 +98,7 @@ export default function HomePage() {
           <div className="services-band-media" aria-hidden="true">
             <video
               className="services-band-video services-band-video-left"
-              src="/assets/videos/kitchen_walkthrough_no_people.mp4"
+              src={assetUrl('videos/kitchen_walkthrough_no_people.mp4')}
               autoPlay={!reduceMotion}
               muted
               loop
@@ -106,7 +107,7 @@ export default function HomePage() {
             />
             <video
               className="services-band-video services-band-video-right"
-              src="/assets/videos/walk_from_this_kitchen.mp4"
+              src={assetUrl('videos/walk_from_this_kitchen.mp4')}
               autoPlay={!reduceMotion}
               muted
               loop
@@ -165,7 +166,7 @@ export default function HomePage() {
       </Reveal>
 
       <Reveal as="section" className="proof-grid" id="owners" delay={120}>
-        <Reveal as="img" className="proof-image" src="/assets/images/luxury_living_room.png" alt="Luxury living room" delay={60} />
+        <Reveal as="img" className="proof-image" src={assetUrl('images/luxury_living_room.png')} alt="Luxury living room" delay={60} />
 
         <Reveal as="blockquote" className="quote-card" delay={150}>
           <span className="quote-mark" aria-hidden="true">
@@ -194,7 +195,7 @@ export default function HomePage() {
           </div>
         </Reveal>
 
-        <Reveal as="img" className="proof-image" src="/assets/images/hero_brownstones.png" alt="Boston street scene" delay={240} />
+        <Reveal as="img" className="proof-image" src={assetUrl('images/hero_brownstones.png')} alt="Boston street scene" delay={240} />
 
         <Reveal as="div" className="stats-card" delay={300}>
           {stats.map((stat, index) => (
@@ -213,7 +214,7 @@ export default function HomePage() {
       </Reveal>
 
       <Reveal as="section" className="cta-grid" id="resources" delay={100}>
-        <Reveal as="img" src="/assets/images/spiral_staircase.png" alt="Historic staircase" delay={60} />
+        <Reveal as="img" src={assetUrl('images/spiral_staircase.png')} alt="Historic staircase" delay={60} />
         <Reveal className="cta-panel" delay={140}>
           <SectionHeading
             title="Get Your Time Back"
@@ -224,7 +225,7 @@ export default function HomePage() {
             <Icon name="arrow" />
           </Link>
         </Reveal>
-        <Reveal as="img" src="/assets/images/modern_kitchen.png" alt="Modern kitchen" delay={220} />
+        <Reveal as="img" src={assetUrl('images/modern_kitchen.png')} alt="Modern kitchen" delay={220} />
       </Reveal>
 
       <Reveal as="section" className="owner-story" delay={120}>
