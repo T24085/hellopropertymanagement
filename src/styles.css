@@ -146,6 +146,12 @@ main {
   width: auto;
 }
 
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 6px;
+}
+
 .nav-links {
   position: relative;
   display: flex;
@@ -1961,6 +1967,10 @@ main {
 
   .brand-lockup img {
     height: 62px;
+  }
+
+  .brand-lockup {
+    padding-left: 4px;
   }
 
   .main-nav {
