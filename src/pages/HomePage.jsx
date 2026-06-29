@@ -244,7 +244,7 @@ export default function HomePage() {
         <Reveal className="faq-panel" delay={170}>
           <SectionHeading
             eyebrow="FREQUENTLY ASKED QUESTIONS"
-            title="Simple answers for owners and tenants."
+            title="Simple Answers For Owners And Tenants."
             body="Please contact us if you cannot find an answer to your question."
           />
           <div className="faq-list">
@@ -261,15 +261,15 @@ export default function HomePage() {
       <Reveal as="section" className="routes-preview" aria-label="Quick links to key pages" delay={120}>
         <Reveal as={Link} to="/about-us" className="route-card route-card-light" delay={60}>
           <span>About Us</span>
-          <strong>Meet the team and learn how we work.</strong>
+          <strong>Meet The Team And Learn How We Work.</strong>
         </Reveal>
         <Reveal as={Link} to="/evictions" className="route-card route-card-dark" delay={140}>
           <span>EVICTIONS</span>
-          <strong>How long evictions take in Massachusetts.</strong>
+          <strong>How Long Evictions Take In Massachusetts.</strong>
         </Reveal>
         <Reveal as={Link} to="/contact-us" className="route-card route-card-accent" delay={220}>
           <span>Contact Us</span>
-          <strong>Request a call and get started today.</strong>
+          <strong>Request A Call And Get Started Today.</strong>
         </Reveal>
       </Reveal>
     </main>

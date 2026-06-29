@@ -16,7 +16,7 @@ export default function EvictionsPage() {
         <Reveal delay={40}>
           <SectionHeading
             eyebrow="EVICTIONS IN MASSACHUSETTS"
-            title="How long do evictions take in Massachusetts?"
+            title="How Long Do Evictions Take In Massachusetts?"
             body="Eviction can be stressful for both landlords and tenants in Massachusetts. Knowing the typical timeline can help you prepare and understand what to expect."
           />
         </Reveal>
@@ -77,7 +77,7 @@ export default function EvictionsPage() {
         <Reveal delay={40}>
           <SectionHeading
             eyebrow="WHY THIS MATTERS FOR HOMEOWNERS"
-            title="Use a management team familiar with the process."
+            title="Use A Management Team Familiar With The Process."
             body="Using a property management company that is familiar with the eviction process will save you time, reduce stress, and ideally lower some of the potential legal costs of eviction."
           />
         </Reveal>

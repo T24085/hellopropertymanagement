@@ -19,7 +19,7 @@ export default function AboutPage() {
           <div className="about-overlay-card about-overlay-left">
             <SectionHeading
               eyebrow="MEET THE TEAM"
-              title="Property people with a local point of view."
+              title="Property People With A Local Point Of View."
               body="Hello Property Management is built around responsiveness, practical judgment, and the kind of day-to-day care that keeps buildings and owners moving forward."
             />
           </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
 
         <Reveal className="about-showcase-copy" delay={120}>
           <p className="eyebrow">OUR APPROACH</p>
-          <h2>Responsive management with an editorial eye for presentation.</h2>
+          <h2>Responsive Management With An Editorial Eye For Presentation.</h2>
           <p>
             We pair practical property management with sharp communication and polished presentation, so owners get a team
             that is as organized as it is attentive.
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <img src={assetUrl('images/luxury_living_room.png')} alt="Luxury living room" />
             <div className="about-overlay-card about-overlay-right">
               <p className="eyebrow">Greater Boston</p>
-              <h2>Condos, apartments, and luxury estates.</h2>
+              <h2>Condos, Apartments, And Luxury Estates.</h2>
               <p>Jack-of-all-trades support for maintenance, leasing, bookkeeping, and legal compliance.</p>
             </div>
           </Reveal>
@@ -70,11 +70,11 @@ export default function AboutPage() {
 
       <Reveal as="section" className="services-alt">
         <Reveal delay={50}>
-          <SectionHeading
-            eyebrow="WHAT WE DO"
-            title="Property, tenant, and rental support."
-            body="We offer a full suite of property management tools to investors, homeowners and landlords. Let us do the work so you can relax knowing your property is in great hands."
-          />
+            <SectionHeading
+              eyebrow="WHAT WE DO"
+              title="Property, Tenant, And Rental Support."
+              body="We offer a full suite of property management tools to investors, homeowners and landlords. Let us do the work so you can relax knowing your property is in great hands."
+            />
         </Reveal>
         <div className="about-service-grid">
           {aboutServiceCards.map((card, index) => (
