@@ -6,19 +6,32 @@ export default function Reveal({
   delay = 0,
   threshold = 0.18,
   rootMargin = '0px 0px -10% 0px',
+  eager = false,
   children,
   style,
   ...props
 }) {
   const ref = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(eager);
 
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
 
+    if (eager) {
+      setIsVisible(true);
+      return;
+    }
+
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reducedMotion || !('IntersectionObserver' in window)) {
+      setIsVisible(true);
+      return;
+    }
+
+    const rect = node.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    if (rect.bottom > 0 && rect.top < viewportHeight * 0.9) {
       setIsVisible(true);
       return;
     }
@@ -43,7 +56,7 @@ export default function Reveal({
     <Tag
       ref={ref}
       className={mergedClassName}
-      data-reveal
+      {...(!eager ? { 'data-reveal': true } : {})}
       style={{ ...style, '--reveal-delay': `${delay}ms` }}
       {...props}
     >

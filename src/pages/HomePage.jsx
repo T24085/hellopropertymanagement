@@ -53,19 +53,19 @@ export default function HomePage() {
     <main>
       <Reveal as="section" className="hero" id="top">
         <div className="hero-copy">
-          <Reveal as="p" className="eyebrow" delay={0}>
+          <Reveal as="p" className="eyebrow" delay={0} eager>
             {heroCopy.eyebrow}
           </Reveal>
-          <Reveal as="h1" delay={90}>
+          <Reveal as="h1" delay={90} eager>
             <span>{heroCopy.title}</span>
           </Reveal>
-          <Reveal as="p" className="hero-accent" delay={180}>
+          <Reveal as="p" className="hero-accent" delay={180} eager>
             <span>{heroCopy.accent}</span>
           </Reveal>
-          <Reveal as="p" className="hero-body" delay={270}>
+          <Reveal as="p" className="hero-body" delay={270} eager>
             {heroCopy.body}
           </Reveal>
-          <Reveal as="div" className="hero-actions" delay={360}>
+          <Reveal as="div" className="hero-actions" delay={360} eager>
             {heroCopy.ctas.map((cta) =>
               cta.primary ? (
                 <Link key={cta.label} className="button button-primary" to={cta.href}>
@@ -82,8 +82,14 @@ export default function HomePage() {
           </Reveal>
         </div>
 
-        <Reveal as="div" className="hero-media" delay={160}>
-          <img src={assetUrl('images/hero_brownstones.png')} alt="Boston brownstones" />
+        <Reveal as="div" className="hero-media" delay={0} eager>
+          <img
+            src={assetUrl('images/hero_brownstones.png')}
+            alt="Boston brownstones"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
           <div className="hero-note hero-note-left" />
           <div className="hero-note hero-note-card">
             <p>Local Expertise.</p>

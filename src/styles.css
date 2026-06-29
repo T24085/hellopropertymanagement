@@ -2023,7 +2023,8 @@ main {
   }
 
   .hero {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 14px;
     margin-top: 16px;
     padding-top: 8px;
@@ -2060,21 +2061,24 @@ main {
     position: relative;
     left: auto;
     top: auto;
+    order: 1;
     width: auto;
     transform: none;
-    margin-bottom: 0;
-    padding: 22px 18px 20px;
+    width: min(100%, 420px);
+    margin: -56px auto 0;
+    padding: 20px 18px 18px;
     box-shadow: 0 12px 30px rgba(29, 20, 15, 0.1);
+    z-index: 2;
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.45rem, 9vw, 3.55rem);
-    line-height: 0.95;
+    font-size: clamp(2.25rem, 9vw, 3.25rem);
+    line-height: 0.94;
   }
 
   .hero-accent {
     margin-top: 10px;
-    font-size: clamp(2rem, 7.5vw, 2.65rem);
+    font-size: clamp(1.85rem, 7.2vw, 2.45rem);
   }
 
   .hero-body {
@@ -2100,12 +2104,7 @@ main {
   }
 
   .hero-note-card {
-    left: 50%;
-    right: auto;
-    bottom: 12px;
-    transform: translateX(-50%);
-    min-width: min(82vw, 280px);
-    padding: 20px 22px 18px;
+    display: none;
   }
 
   .hero-note-card p {
@@ -2129,8 +2128,13 @@ main {
   }
 
   .hero-media {
-    min-height: 360px;
+    order: -1;
+    min-height: 58vh;
     border-radius: 22px;
+  }
+
+  .hero-media img {
+    object-position: center top;
   }
 
   .about-showcase-frame {
