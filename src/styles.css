@@ -1240,6 +1240,7 @@ main {
   min-width: 96px;
   align-self: stretch;
   background: rgba(245, 240, 230, 0.94);
+  padding-left: 12px;
 }
 
 .contact-panel-brand img {
@@ -1759,6 +1760,10 @@ main {
   height: auto;
 }
 
+.footer-brand {
+  padding-left: 12px;
+}
+
 .footer-brand p {
   max-width: 16rem;
   margin: 18px 0 0;
@@ -1971,6 +1976,14 @@ main {
 
   .brand-lockup {
     padding-left: 4px;
+  }
+
+  .footer-brand {
+    padding-left: 6px;
+  }
+
+  .contact-panel-brand {
+    padding-left: 8px;
   }
 
   .main-nav {
