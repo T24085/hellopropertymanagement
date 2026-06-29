@@ -1214,9 +1214,8 @@ main {
   margin-bottom: 0;
   z-index: 4;
   align-self: stretch;
-  transform: translate(16px, 12px);
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: minmax(150px, 0.92fr) minmax(0, 1.08fr);
   gap: 0;
   padding: 0;
   overflow: hidden;
@@ -1233,21 +1232,19 @@ main {
 }
 
 .contact-panel-brand {
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
+  display: grid;
+  place-items: center;
   margin: 0;
-  min-width: 96px;
+  min-width: 0;
   align-self: stretch;
-  background: rgba(245, 240, 230, 0.94);
-  padding-left: 12px;
+  background: transparent;
+  padding: 18px 14px 18px 18px;
 }
 
 .contact-panel-brand img {
-  width: auto;
-  height: 100%;
-  max-width: none;
-  flex: 0 0 auto;
+  width: min(168px, 100%);
+  height: auto;
+  max-width: 100%;
   object-fit: contain;
   display: block;
 }
@@ -1256,7 +1253,7 @@ main {
   display: grid;
   gap: 8px;
   align-content: center;
-  padding: 24px 26px 24px 22px;
+  padding: 24px 26px 24px 20px;
 }
 
 .contact-panel-copy p {
@@ -2006,16 +2003,17 @@ main {
     width: auto;
     margin-top: 16px;
     transform: none;
-    grid-template-columns: 92px minmax(0, 1fr);
+    grid-template-columns: minmax(110px, 0.86fr) minmax(0, 1fr);
   }
 
   .contact-panel-brand {
-    min-width: 92px;
+    min-width: 0;
+    padding: 14px 12px 14px 14px;
   }
 
   .contact-panel-brand img {
-    width: auto;
-    height: 100%;
+    width: min(118px, 100%);
+    height: auto;
   }
 
   .contact-panel-copy {
