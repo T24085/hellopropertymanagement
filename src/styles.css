@@ -1191,20 +1191,24 @@ main {
   box-shadow: 0 14px 32px rgba(31, 28, 27, 0.12);
 }
 
-.page-hero-contact .section-heading {
-  position: relative;
-  background: linear-gradient(180deg, #c23a43, #a61f2a);
-  color: #fff6f0;
-  min-height: 330px;
+  .page-hero-contact .section-heading {
+    position: relative;
+    background: linear-gradient(180deg, #c23a43, #a61f2a);
+    color: #fff6f0;
+    min-height: 330px;
   padding: 30px 30px 32px;
   padding-right: clamp(300px, 31vw, 470px);
 }
 
-.page-hero-contact .section-heading .eyebrow,
-.page-hero-contact .section-heading h2,
-.page-hero-contact .section-heading p:last-child {
-  color: inherit;
-}
+  .page-hero-contact .section-heading .eyebrow,
+  .page-hero-contact .section-heading h2,
+  .page-hero-contact .section-heading p:last-child {
+    color: inherit;
+  }
+
+  .page-hero-contact .section-heading h2 {
+    text-transform: capitalize;
+  }
 
 .page-hero-contact .page-hero-panel {
   position: absolute;

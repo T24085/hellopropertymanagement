@@ -27,7 +27,7 @@ export default function ContactPage() {
           <Reveal delay={40}>
             <SectionHeading
               eyebrow="CONTACT US"
-              title="We look forward to hearing from you."
+              title="We Look Forward To Hearing From You."
               body="Do you need help managing your property? Please fill out the request form and we can schedule a call to discuss your needs."
             />
           </Reveal>
