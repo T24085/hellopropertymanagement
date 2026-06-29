@@ -58,7 +58,7 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="main-nav">
         <Link to="/" className="brand-lockup" aria-label="Hello Property Management home">
-          <img src={assetUrl('images/logo.webp')} alt="" />
+          <img src={assetUrl('images/hello-property-management-transparent.png')} alt="" />
         </Link>
 
         <nav className="nav-links" aria-label="Primary" ref={navRef} onMouseLeave={hideIndicator}>
