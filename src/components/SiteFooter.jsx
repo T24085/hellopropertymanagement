@@ -23,7 +23,7 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <img src={assetUrl('images/logo.webp')} alt="Hello Property Management" />
+          <img src={assetUrl('images/hello-property-management-transparent.png')} alt="Hello Property Management" />
           <p>Premium property management for discerning owners in Greater Boston.</p>
           <div className="social-links">
             {socialLinks.map((item) => (

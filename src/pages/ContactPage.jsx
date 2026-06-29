@@ -33,7 +33,7 @@ export default function ContactPage() {
           </Reveal>
           <Reveal className="page-hero-panel" delay={140}>
             <div className="contact-panel-brand">
-              <img src={assetUrl('images/logo.webp')} alt="" />
+              <img src={assetUrl('images/hello-property-management-transparent.png')} alt="Hello Property Management" />
             </div>
             <div className="contact-panel-copy">
               <p>Hello Property Management</p>
