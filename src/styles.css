@@ -2022,6 +2022,15 @@ main {
     padding: 18px 18px 18px 16px;
   }
 
+  .hero {
+    display: grid;
+    gap: 14px;
+    margin-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 22px;
+    min-height: 0;
+  }
+
   .hero-copy,
   .services-band,
   .quote-card,
@@ -2052,26 +2061,38 @@ main {
     left: auto;
     top: auto;
     width: auto;
-    margin-bottom: 14px;
     transform: none;
-    padding-top: 24px;
+    margin-bottom: 0;
+    padding: 22px 18px 20px;
+    box-shadow: 0 12px 30px rgba(29, 20, 15, 0.1);
   }
 
   .hero-copy h1 {
     font-size: clamp(2.45rem, 9vw, 3.55rem);
+    line-height: 0.95;
   }
 
   .hero-accent {
+    margin-top: 10px;
     font-size: clamp(2rem, 7.5vw, 2.65rem);
   }
 
   .hero-body {
     margin-top: 18px;
+    max-width: none;
     font-size: 0.96rem;
   }
 
   .hero-actions {
     margin-top: 18px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-note-left {
@@ -2084,6 +2105,11 @@ main {
     bottom: 12px;
     transform: translateX(-50%);
     min-width: min(82vw, 280px);
+    padding: 20px 22px 18px;
+  }
+
+  .hero-note-card p {
+    font-size: 1.72rem;
   }
 
   .service-grid,
@@ -2103,7 +2129,8 @@ main {
   }
 
   .hero-media {
-    min-height: 420px;
+    min-height: 360px;
+    border-radius: 22px;
   }
 
   .about-showcase-frame {
